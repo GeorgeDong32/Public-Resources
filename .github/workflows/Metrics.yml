@@ -10,7 +10,7 @@ jobs:
       contents: write
     steps:
       - name: SYSU_Matrix License
-      - uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: SYSU_Matrix_2022_licenses.svg
