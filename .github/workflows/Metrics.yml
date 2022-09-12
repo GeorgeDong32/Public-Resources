@@ -31,3 +31,14 @@ jobs:
           plugin_licenses: yes
           plugin_licenses_ratio: yes
           plugin_licenses_legal: yes
+      - name: MATLAB-Learn License
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: ML_License.svg
+          repo: MATLAB-Learn
+          template: repository
+          base: ''
+          plugin_licenses: yes
+          plugin_licenses_ratio: yes
+          plugin_licenses_legal: yes
