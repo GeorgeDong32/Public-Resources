@@ -42,3 +42,14 @@ jobs:
           plugin_licenses: yes
           plugin_licenses_ratio: yes
           plugin_licenses_legal: yes
+      - name: My-Physics-Experiments License
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: MPE_License.svg
+          repo: My-Physics-Experiments
+          template: repository
+          base: ''
+          plugin_licenses: yes
+          plugin_licenses_ratio: yes
+          plugin_licenses_legal: yes
