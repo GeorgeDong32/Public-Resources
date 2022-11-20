@@ -2,7 +2,6 @@ name: Metrics
 on:
     watch:
         types: [started]
-    push: {branches: ["master", "main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
